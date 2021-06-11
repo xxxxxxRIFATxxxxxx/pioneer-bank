@@ -37,21 +37,84 @@
         <!-- Login Area -->
         <section id="login-area">
             <h1 class="text-center">Welcome to Pioneer Bank</h1>
-            <div class="rounded shadow p-5 submit-area">
+            <form class="shadow p-5 submit-area">
                 <h4 class="mb-3">Login</h4>
                 <div class="mb-3">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password"
+                        autocomplete="on">
                 </div>
-                <button id="login-button" class="btn btn-success">Login</button>
+                <button type="button" id="login-button" class="btn btn-success">Login</button>
+            </form>
+        </section>
+
+        <!-- Transaction Area -->
+        <section id="transaction-area">
+            <!-- Amount Section -->
+            <div class="row row-cols-1 row-cols-md-3 g-5 mb-5 amount-section">
+                <div class="col">
+                    <div class="card h-100 deposit">
+                        <div class="card-body">
+                            <h5 class="card-title">Deposit</h5>
+                            <h2>$<span id="current-deposit">00</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 withdraw">
+                        <div class="card-body">
+                            <h5 class="card-title">Withdraw</h5>
+                            <h2>$<span id="current-withdraw">00</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 balance">
+                        <div class="card-body">
+                            <h5 class="card-title">Balance</h5>
+                            <h2>$<span id="current-balance">1240</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deposit Withdraw Area -->
+            <div class="row row-cols-1 row-cols-md-2 g-5">
+                <div class="col">
+                    <div class="card h-100 shadow p-3">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Deposit</h4>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="deposit-amount" id="deposit-amount"
+                                    placeholder="$ amount you want to deposit">
+                            </div>
+                            <button type="button" id="deposit-button" class="btn btn-success">Deposit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow p-3">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Withdraw</h4>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="withdraw-amount" id="withdraw-amount"
+                                    placeholder="$ amount you want to withdraw">
+                            </div>
+                            <button type="button" id="withdraw-button" class="btn btn-success">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="text-center mt-5">
+    <footer class="text-center fixed-bottom py-2">
         <small>Copyright &copy; 2021 built with <span>&hearts;</span> by Md.
             Rifat
             Islam</small>

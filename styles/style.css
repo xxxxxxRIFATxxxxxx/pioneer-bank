@@ -4,3 +4,35 @@ body {
     padding: 100px;
 }
 
+/* Login Area CSS */
+.submit-area {
+    border-radius: 10px;
+}
+
+/* Transaction Area CSS */
+#transaction-area {
+    display: none;
+}
+
+#transaction-area .card{
+    border: none;
+    border-radius: 10px;
+}
+
+.amount-section {
+    color: white;
+}
+
+.deposit {
+    background-color: slateblue;
+}
+
+.withdraw {
+    background-color: lightsalmon;
+}
+
+.balance {
+    background-color: orange;
+}
+
+
